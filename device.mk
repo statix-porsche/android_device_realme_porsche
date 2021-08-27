@@ -333,6 +333,9 @@ PRODUCT_USES_QCOM_HARDWARE := true
 # Power
 $(call inherit-product, vendor/hardware/oplus/aidl/power-libperfmgr/power_product.mk)
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
