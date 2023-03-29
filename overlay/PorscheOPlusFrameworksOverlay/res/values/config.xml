@@ -224,4 +224,7 @@
          Refer to autosuspend.h for details.
     -->
     <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
+
+    <!-- Auto-brightness sensor type string -->
+    <string name="config_displayLightSensorType">android.sensor.light</string>
 </resources>
