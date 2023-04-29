@@ -331,10 +331,7 @@ PRODUCT_BOARD_PLATFORM := lahaina
 PRODUCT_USES_QCOM_HARDWARE := true
 
 # Power
-PRODUCT_PACKAGES += \
-    android.hardware.power-service-qti \
-    android.hardware.power@1.2.vendor \
-    vendor.qti.hardware.perf@2.2.vendor
+$(call inherit-product, vendor/hardware/oplus/aidl/power-libperfmgr/power_product.mk)
 
 # QMI
 PRODUCT_PACKAGES += \
