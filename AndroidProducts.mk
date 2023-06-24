@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_porsche.mk
+    $(LOCAL_DIR)/statix_porsche.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_porsche-user \
-    arrow_porsche-userdebug \
-    arrow_porsche-eng
+    statix_porsche-user \
+    statix_porsche-userdebug \
+    statix_porsche-eng
