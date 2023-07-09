@@ -319,6 +319,7 @@ PRODUCT_PACKAGES += \
     PorscheOPlusDozeResTarget \
     PorscheOPlusFrameworksOverlay \
     PorscheOPlusSettingsOverlay \
+    PorscheOPlusSettingsProviderOverlay \
     PorscheOPlusSystemUIOverlay \
     PorscheWifiOverlay
 
