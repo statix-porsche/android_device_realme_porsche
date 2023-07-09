@@ -80,9 +80,6 @@ DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 ODM_MANIFEST_FILES := $(DEVICE_PATH)/configs/vintf/manifest_odm.xml
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oplus
-
 # Kernel
 TARGET_NO_KERNEL_OVERRIDE := true
 TARGET_NO_KERNEL := false
