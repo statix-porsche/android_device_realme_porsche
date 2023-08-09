@@ -314,3 +314,19 @@ echo 128 > /sys/block/dm-9/queue/read_ahead_kb
 
 # SSG
 echo 25 > /dev/blkio/background/blkio.ssg.max_available_ratio
+
+# uclamp tuning
+echo 50 > /dev/cpuctl/background/cpu.uclamp.max
+echo 50 > /dev/cpuctl/system-background/cpu.uclamp.max
+echo 60 > /dev/cpuctl/dex2oat/cpu.uclamp.max
+# Setup cpu.shares to throttle background groups (bg ~ 5% sysbg ~ 5% dex2oat ~2.5%)
+echo 1024 > /dev/cpuctl/background/cpu.shares
+echo 1024 > /dev/cpuctl/system-background/cpu.shares
+echo 512 > /dev/cpuctl/dex2oat/cpu.shares
+echo 20480 > /dev/cpuctl/system/cpu.shares
+# We only have system and background groups holding tasks and the groups below are empty
+echo 20480 > /dev/cpuctl/camera-daemon/cpu.shares
+echo 20480 > /dev/cpuctl/foreground/cpu.shares
+echo 20480 > /dev/cpuctl/nnapi-hal/cpu.shares
+echo 20480 > /dev/cpuctl/rt/cpu.shares
+echo 20480 > /dev/cpuctl/top-app/cpu.shares
