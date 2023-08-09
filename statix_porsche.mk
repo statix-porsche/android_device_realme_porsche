@@ -14,7 +14,7 @@ $(call inherit-product, device/realme/porsche/device.mk)
 # Inherit StatiX common configuration
 $(call inherit-product, vendor/statix/config/common.mk)
 $(call inherit-product, vendor/statix/config/gsm.mk)
-INCLUDE_PIXEL_LAUNCHER := true
+TARGET_USES_BLUR := true
 ENABLE_GAMETOOLS := true
 TARGET_BOOT_ANIMATION_RES := 1080
 
