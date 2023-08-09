@@ -232,6 +232,7 @@ PRODUCT_PACKAGES += \
     fstab.default.vendor_ramdisk \
     init.class_main.sh \
     init.oplus.rc \
+    init.porsche.perf.rc \
     init.qcom.early_boot.sh \
     init.qcom.rc \
     init.qcom.recovery.rc \
@@ -240,7 +241,8 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.target.rc \
     ueventd.oplus.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.porsche.post_boot.sh
 
 # Kernel
 TARGET_KERNEL_DIR ?= device/realme/porsche-kernel

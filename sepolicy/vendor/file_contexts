@@ -1,2 +1,5 @@
+# Init
+/vendor/bin/init.porsche.post_boot.sh     u:object_r:vendor_qti_init_shell_exec:s0
+
 # Vibrator
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.porsche    u:object_r:hal_vibrator_default_exec:s0
