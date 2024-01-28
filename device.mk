@@ -25,6 +25,15 @@ PRODUCT_COPY_FILES += \
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
+# Kernel
+TARGET_KERNEL_DIR ?= device/realme/porsche-kernel
+LOCAL_KERNEL := $(TARGET_KERNEL_DIR)/Image
+
+PRODUCT_COPY_FILES += $(LOCAL_KERNEL):kernel
+
+# Kernel Headers
+PRODUCT_VENDOR_KERNEL_HEADERS += device/realme/porsche-kernel/kernel-headers
+
 # NFC
 PRODUCT_PACKAGES += \
     android.hardware.nfc-service.nxp \
